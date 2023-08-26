@@ -1,0 +1,90 @@
+3.	External Interface Requirements
+  
+3.1---> User Interfaces:
+    Screenshots of figma.
+
+3.2---> Hardware Interfaces
+
+1. Camera and Microphone:
+   - Description: Our system utilizes the user's device camera and microphone for real-time proctoring and verification during exams.
+   - Device Types: Desktop computers, laptops, tablets, and smartphones equipped with cameras and microphones.
+   - Interaction: The application activates the camera and microphone during the exam session to monitor the student and ensure exam integrity.
+   - Communication Protocol: Ask the users to allow to utilize browser APIs to access camera and microphone functionalities.
+
+
+
+2. 3D Image Verification:
+   - Description: In the time of  user's sign-up, the system will capture a 3D image of the user for identification during exams.
+   - Device Types: Devices equipped with cameras capable of capturing 3D images.(mobile front camera, webcam)
+   - Interaction: The system will ask to capture an image while loggin. This image will be used for identification and verification during exams.
+   - Communication Protocol: Utilizes browser APIs to access camera functionalities.
+
+
+3. Email Services:
+   - Description: The application sends emails containing invitation links to join cohorts.
+   - Device Types: Servers handling email communication.
+   - Interaction: The application communicates with the email server to send invitations to students.
+   - Communication Protocol: Utilizes standard email protocols.
+
+
+4. User Devices:
+   - Description: Users access the application through various devices, including desktop computers, laptops, tablets, and smartphones.
+   - Device Types: Desktop computers, laptops, tablets, and smartphones.
+   - Interaction: Users interact with the application's user interfaces to register, create assessments, take exams, and view results.
+   - Communication Protocol: Utilizes web browser technologies to interact with the application.
+
+
+3.3---> Software Interfaces
+
+1. Server Software:
+   - Description: Our system will be hosted on windows system, Django, MySQL database,Firebase.
+   - Data Items: User data, exam questions, answers, assessment configurations, exam results, proctoring data.
+   - Purpose: Stores, retrieves, and manages user data, assessments, and exam-related information.
+
+2. Web Browsers:
+   - Description: The system will allow the users to interact with its user interface through modern browsers.
+   - Data Items: User input, authentication tokens, exam questions, answers, and exam results, comments.
+   - Purpose: Facilitates user interaction with the application's features and functionalities.
+
+
+3. Database Management System:
+   - Description: The application interacts with the MySQL,Firebase database for data storage, retrieval, and management.
+   - Data Items: User data, exam questions, answers, results, proctoring data, comments.
+   - Purpose: To store and retrieve user-related information, exam data, and proctoring records and comments of the students.
+
+4. APIs and Libraries:
+   - Description: The system may utilize APIs and libraries for specific functionalities, such as real-time communication, image processing, and data encryption.
+   - Data Items: Varies based on the specific APIs and libraries used.
+   - Purpose: Enhances application functionality by leveraging specialized services and tools.
+
+
+
+3.4--->
+
+
+1. Camera and Microphone Interfaces:
+   - Description: The application interacts with the help of device cameras and microphones for real-time proctoring and verification,
+     asks users to allow camera and microphone access.
+   - Communication Standards: Leverages browser-specific APIs for device interaction. 
+   - Message Formatting : Audio, Images, Videos.
+  
+2. Server-Client Interfaces:
+   - Description: The application's server communicates with user devices (web browsers) for user interactions.
+   - Communication Standards: Usses to HTTP/HTTPS standards for communication between clients and the server.
+   - Communication Security: HTTPS for encrypted communication, ensuring data confidentiality.
+   - **Message Formatting:** Utilizes JSON data for requests and responses, conforming to web standards.(??????????????????)
+
+
+3. Web Browser Interfaces:
+   - Description: Users access the application through modern web browsers (like- Chrome).
+   - Message Formatting: HTTP requests and responses.
+   - Communication Standards:  HTTPS (HTTP over SSL/TLS)because  for secure communication.
+   - Communication Security: HTTP authentication.
+
+ 
+4. Database Interfaces (MySQL,Firebase) :
+   - Description: The application communicates with the MySQL and Firebase database for data storage and retrieval.
+   - Message Formatting: Utilizes SQL queries, Firebase commands for data manipulation and retrieval.
+   - Communication Standards: Adheres to MySQL-specific and Firebase communication protocols.
+   - Communication Security: Secured by MySQL authentication, Firebase authentication mechanisms and network encryption.
+
